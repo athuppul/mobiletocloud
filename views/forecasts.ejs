@@ -1,0 +1,13 @@
+<table>
+  <tr>
+    <th>City</th>
+    <th>Temp</th>
+    <th>Precipitation</th>
+  </tr>
+  <% for(var x = 0; x < forecastCollection.length; x++){%>
+  <tr>
+    <td><%= forecastCollection[x].city%></td>
+    <td><%= forecastCollection[x].temp%></td>
+    <td><%= forecastCollection[x].precip%></td>
+  </tr>
+  <%}%>
